@@ -11,7 +11,7 @@ const BlogId = ({ blog }: BlogIdProps) => {
     <main>
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
-      <div>
+      <div style={{'color': 'red'}}>
         {blog.categories?.map((c) => (
           <p key={c.name}>{c.name}</p>
         ))}
